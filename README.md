@@ -29,7 +29,7 @@ After you've setup and logged into the https://developer.amazon.com/ console we 
 
 Congrats, the skills created, although it's nothing more than a shell with a name that literally does nothing - lets give it a purpose (insert Rick & Morty robot joke [here](https://www.youtube.com/watch?v=X7HmltUWXgs))
 
-#### Giving the Skill a purpose
+#### Giving the Skill a purpose
 1. Copy the contents of the model.json file found in this repo under the models folder, or click here *to-do link model*
 2. On the left of your developer console go to the "JSON Editor" under "Interaction Model"
 3. Paste the contents of the json file here and click "Save Model" at the top
@@ -49,7 +49,7 @@ Make sure you're logged into https://aws.amazon.com
 I've already created a sample Lambda which you'll be able to build on make go ahead and download it from the following link:
 https://s3-eu-west-1.amazonaws.com/ryan109-workshop-storage/alexa-tutorial/lambda_function.zip
 
-#### Creating your Lambda
+#### Creating your Lambda
 1. Type "Lambda" into the aws search box
 2. "Create Function"
 3. "Author from scratch"
