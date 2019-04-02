@@ -9,7 +9,9 @@ Before we get started we need 2 accounts:
 1. AWS Account - https://aws.amazon.com/Sign-Up‎
 2. Amazon Developer Account - https://developer.amazon.com/
 
-It should be pretty quick setting both of these things up, your AWS account may require card info but it won't charge your account unless you start using chargable resources. The material in this tutorial *DOES NOT* cause any charges to your account.
+It should be pretty quick setting both of these things up, your AWS account may require card info but it won't charge your account unless you start using chargable resources. The material in this tutorial *DOES NOT* cause any charges to your account. *Unless you make over 1million requests to your Lambda within a month, in which case I accept no responsibility for that cost.*
+
+For those that are interested, you can view the free tier Lambda model [here](https://aws.amazon.com/lambda/pricing/)
 
 ## Getting Started
 
