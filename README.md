@@ -18,21 +18,21 @@ It should be pretty quick setting both of these things up, your AWS account may 
 After you've setup and logged into the https://developer.amazon.com/ console we can create a simple skill.
 
 #### Creating a blank Skill
-1. Click on "Your Alexa Consoles" -> "Skills"
-2. Now "Create Skill"
+1. Click on `Your Alexa Consoles` -> `Skills`
+2. Now `Create Skill`
 3. Name your skill something appropraite for instance "banking app"
 	a. Language - English(UK)
 	b. Under the choose a model section, select - Custom (should be selected by default)
 	c. When choosing a method to host your skills resources - Custom (should also be default)
-	d. "Create Skill"
+	d. `Create Skill`
 4. Choose a template - Start from scratch
 
 Congrats, the skills created, although it's nothing more than a shell with a name that literally does nothing - lets give it a purpose (insert Rick & Morty robot joke [here](https://www.youtube.com/watch?v=X7HmltUWXgs))
 
 #### Giving the Skill a purpose
 1. Copy the contents of the model.json file found in this repo under the models folder, or click here *to-do link model*
-2. On the left of your developer console go to the "JSON Editor" under "Interaction Model"
-3. Paste the contents of the json file here and click "Save Model" at the top
+2. On the left of your developer console go to the `JSON Editor` under `Interaction Model`
+3. Paste the contents of the json file here and click `Save Model` at the top
 
 Should everything have worked correctly you will now see 2 intents having appeared under your invocation model:
 - GetAccountInfo
@@ -50,34 +50,34 @@ I've already created a sample Lambda which you'll be able to build on make go ah
 https://s3-eu-west-1.amazonaws.com/ryan109-workshop-storage/alexa-tutorial/lambda_function.zip
 
 #### Creating your Lambda
-1. Type "Lambda" into the aws search box
-2. "Create Function"
-3. "Author from scratch"
+1. Type `Lambda` into the aws search box
+2. `Create Function`
+3. `Author from scratch`
 	a. Give your function a relevant name "alexa_banking_skill"
 	b. Runtime -> Python 3.6
 	c. Create Lambda
-4. Scroll down to the "Function Code" section, under "Code entry type" choose "Upload a .zip file"
+4. Scroll down to the `Function Code` section, under `Code entry type` choose `Upload a .zip file`
 	a. Select the downloaded lambda zip
-	b. Press "Save" at the top right
+	b. Press `Save` at the top right
 5. Save the updated function
 
 #### Testing your Lambda
 1. Configure a new test event using the drop down beside the test button
 2. Copy getAccountInfo & getPendingTransactions json models saved in this repo, and create a test event for each one.
-3. Press "test", on the log output you should get a response relevant to the event you're testing.
+3. Press `test`, on the log output you should get a response relevant to the event you're testing.
 
 Note: The transaction test may time out from time to time, this is a problem with API it's trying to hit.
 
 #### Adding an Alexa trigger to hit your Lambda
-Now that our Lambda is working we need to plug it in to our Alexa skill so she can finally do our taxes, for this naviagte to the "deisinger" tab at the top of the page:
+Now that our Lambda is working we need to plug it in to our Alexa skill so she can finally do our taxes, for this naviagte to the `deisinger` tab at the top of the page:
 1. Click the Alexa skills kit from the left hand side, this should add it to your stack.
-2. Click on "configuration required" under the newly added trigger
-3. Swap tabs back over to your skill and click on the "Endpoint" section from the drop down on the left
+2. Click on `configuration required` under the newly added trigger
+3. Swap tabs back over to your skill and click on the `Endpoint` section from the drop down on the left
 	a. Select AWS Lambda
 	b. Copy your skill ID
 4. Swap back over to the Lambda console and paste your skill ID in the required box.
-5. Now copy the ARN of your Lambda which you can find in the top right of your console e.g: arn:aws:lambda:eu-west-1:0000000000000:function:example_lambda
-6. Swap back over to your skill and paste it in the "default region" box just under where Skill ID is noted.
+5. Now copy the ARN of your Lambda which you can find in the top right of your console e.g: `arn:aws:lambda:eu-west-1:0000000000000:function:example_lambda`
+6. Swap back over to your skill and paste it in the `default region` box just under where Skill ID is noted.
 7. Save both your Skill and your Lambda.
 
 Now say the magic words and pray to whatever serpent God you believe in...geddit, Python? (Still have no idea why I chose programming over stand up)
@@ -86,7 +86,7 @@ It's time to start chatting up Alexa and see what she can do.
 
 ### Piecing the puzzle together
 
-Go to your Alexa Skill and along the top click on the "testing" tab, then make sure the "Skill testing is enabled in" - Development.
+Go to your Alexa Skill and along the top click on the `testing` tab, then make sure the `Skill testing is enabled in` - Development.
 
 On the left you'll see the Alexa simulator where you can have a conversation with her by typing, all going well it should go something like this:
 Me: "open banking skill" (Or whatever the name of your skill is)
