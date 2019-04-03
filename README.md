@@ -32,7 +32,7 @@ After you've setup and logged into the https://developer.amazon.com/ console we 
 Congrats, the skills created, although it's nothing more than a shell with a name that literally does nothing - lets give it a purpose (insert Rick & Morty robot joke [here](https://www.youtube.com/watch?v=X7HmltUWXgs))
 
 #### Giving the Skill a purpose
-1. Copy the contents of the model.json file found in this repo under the models folder, or click here *to-do link model*
+1. Copy the contents of the model.json file found in this repo under the models folder, or click [here](https://github.com/ryan109/Serverless-Workshop/blob/master/models/model.json)
 2. On the left of your developer console go to the `JSON Editor` under `Interaction Model`
 3. Paste the contents of the json file here and click `Save Model` at the top
 
@@ -65,7 +65,7 @@ https://s3-eu-west-1.amazonaws.com/ryan109-workshop-storage/alexa-tutorial/lambd
 
 #### Testing your Lambda
 1. Configure a new test event using the drop down beside the test button
-2. Copy getAccountInfo & getPendingTransactions json models saved in this repo, and create a test event for each one.
+2. Copy [getAccountInfo](https://github.com/ryan109/Serverless-Workshop/blob/master/models/getAccountInfo.json) & [getPendingTransactions](https://github.com/ryan109/Serverless-Workshop/blob/master/models/listPendingTransactions.json) json models saved in this repo, and create a test event for each one.
 3. Press `test`, on the log output you should get a response relevant to the event you're testing.
 
 Note: The transaction test may time out from time to time, this is a problem with API it's trying to hit.
