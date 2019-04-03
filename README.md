@@ -4,7 +4,7 @@ I think if Alexa could _actually_ do my taxes then Jeff Bezos would be the riche
 
 This tutorial is a light introduction into getting a basic skill setup on Amazon Alexa, using AWS Lambda and CapitalOne's UK developer API.
 
-## Prerequisites
+## Prerequisites
 Before we get started we need 2 accounts:
 1. AWS Account - https://aws.amazon.com/Sign-Up‎
 2. Amazon Developer Account - https://developer.amazon.com/
