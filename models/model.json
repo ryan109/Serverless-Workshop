@@ -1,0 +1,46 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "banking app",
+            "intents": [
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetAccountInfo",
+                    "slots": [],
+                    "samples": [
+                        "what card is registered",
+                        "what are the last four digits of my credit card",
+                        "give me my account details",
+                        "account details"
+                    ]
+                },
+                {
+                    "name": "ListPendingTransactions",
+                    "slots": [],
+                    "samples": [
+                        "recent transactions",
+                        "pending transactions",
+                        "how many pending transactions do I have",
+                        "transaction report"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

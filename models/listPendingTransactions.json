@@ -1,0 +1,40 @@
+{
+  "session": {
+    "new": true,
+    "sessionId": "SessionId.random-session",
+    "application": {
+      "applicationId": "amzn1.ask.skill.random-id"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.random-user-id"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.random-request-id",
+    "intent": {
+      "name": "ListPendingTransactions",
+      "slots": {}
+    },
+    "locale": "en-US",
+    "timestamp": "2017-11-22T20:00:58Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.random-id"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.random-user-id"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}

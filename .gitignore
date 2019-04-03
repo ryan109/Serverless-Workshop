@@ -1,0 +1,8 @@
+# Python Dependancies
+*.dist-info
+/urllib3/
+/bin/
+/certifi/
+/chardet/
+/idna/
+/requests/
